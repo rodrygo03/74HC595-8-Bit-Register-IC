@@ -1,5 +1,6 @@
 #include "IC_74HC595.h"
 
+// using LEDs to test output 
 unsigned short OE_pin = 2;
 unsigned short MR_pin = 4;
 unsigned short DS_pin = 7;
