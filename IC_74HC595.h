@@ -24,14 +24,14 @@ class IC_74HC595 {
   public:
     IC_74HC595();
     IC_74HC595(unsigned short OE_pin, unsigned short MR_pin, unsigned short DS_pin, unsigned short SHCP_pin, unsigned short STCP_pin, double DELAY);
-    void setup(); 
-    void set_delay(double DELAY);              
-    void clear_shiftReg();         
-    void load_storeReg();          
+    void clear_shiftReg(); 
     void load_shiftReg(bool* reg, bool reverse=false); 
     void load_store_then_push_shift(bool val=LOW);
+    void load_storeReg();
+    void move_shift_to_store(); 
     void push_shiftReg(bool val=LOW); 
-    void move_shift_to_store();  
+    void setup(); 
+    void set_delay(double DELAY);                              
 };
 
 # endif

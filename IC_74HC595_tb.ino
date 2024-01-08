@@ -45,7 +45,7 @@ void push_to_shift_to_store_test2() {
 
 void load_to_shift_load_store_push_shift1(bool* data) {
   reg.load_shiftReg(data, true);
-  //reg.load_store_then_push_shift(HIGH);
+  reg.load_store_then_push_shift(HIGH);
   delay(1000);
   reg.move_shift_to_store();
   delay(3000);
@@ -53,7 +53,7 @@ void load_to_shift_load_store_push_shift1(bool* data) {
 
 void load_to_shift_load_store_push_shift2(bool* data) {
   reg.load_shiftReg(data, true);
-  //reg.load_store_then_push_shift();
+  reg.load_store_then_push_shift();
   delay(1000);
   reg.load_storeReg();
   delay(3000);
